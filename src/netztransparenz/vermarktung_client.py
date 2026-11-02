@@ -250,7 +250,7 @@ class VermarktungClient(BaseNtClient):
         Return a pandas Dataframe with data of the endpoint /vermarktung/VermarktungExaa.
         If either dt_begin or dt_end is None, all available data will be queried.
 
-            dt_begin -- datetime object for start of data in UTC (no values before: 2011-12-31T22:00:00)
+            dt_begin -- datetime object for start of data in UTC (no values before: 2011-12-31T23:00:00)
             dt_end -- datetime object for end of data in UTC
             transform_dates -- The data contains times with date, time and timezone in separate columns
                                if this option resolves to "True" the times will be transformed into two

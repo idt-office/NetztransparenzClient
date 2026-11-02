@@ -157,12 +157,12 @@ endpoints = {
         "transformed_header": "von;bis;50Hertz (MW);Amprion (MW);TenneT TSO (MW);TransnetBW (MW)",
     },
     "/vermarktung/VermarktungEpex": {
-        "first_data": dt.datetime(2011, 12, 31, 23),
+        "first_data": dt.datetime(2011, 12, 31, 22),
         "header": "Datum;von;Zeitzone von;bis;Zeitzone bis;50Hertz (MW);Amprion (MW);TenneT TSO (MW);TransnetBW (MW)",
         "transformed_header": "von;bis;50Hertz (MW);Amprion (MW);TenneT TSO (MW);TransnetBW (MW)",
     },
     "/vermarktung/VermarktungsSonstige": {
-        "first_data": dt.datetime(2011, 12, 31, 22),
+        "first_data": dt.datetime(2013, 12, 31, 23),
         "header": "Datum;von;Zeitzone von;bis;Zeitzone bis;50Hertz (MW);Amprion (MW);TenneT TSO (MW);TransnetBW (MW)",
         "transformed_header": "von;bis;50Hertz (MW);Amprion (MW);TenneT TSO (MW);TransnetBW (MW)",
     },
@@ -182,7 +182,7 @@ endpoints = {
         "transformed_header": "von;bis;ID AEP in €/MWh",
     },
     "/marktpraemie": {
-        "first_data": dt.datetime(2012, 1, 1),
+        "first_data": dt.datetime(2011, 12, 31, 23),
         "header": "Monat;MW-EPEX in ct/kWh;MW Wind Onshore in ct/kWh;PM Wind Onshore fernsteuerbar in ct/kWh;MW Wind Offshore in ct/kWh;PM Wind Offshore fernsteuerbar in ct/kWh;MW Solar in ct/kWh;PM Solar fernsteuerbar in ct/kWh;MW steuerbar in ct/kWh;PM steuerbar in ct/kWh;Negative Stunden (6H);Negative Stunden (4H);Negative Stunden (3H);Negative Stunden (1H);Negative Stunden (15MIN)",
         "transformed_header": "Monat;MW-EPEX in ct/kWh;MW Wind Onshore in ct/kWh;PM Wind Onshore fernsteuerbar in ct/kWh;MW Wind Offshore in ct/kWh;PM Wind Offshore fernsteuerbar in ct/kWh;MW Solar in ct/kWh;PM Solar fernsteuerbar in ct/kWh;MW steuerbar in ct/kWh;PM steuerbar in ct/kWh;Negative Stunden (6H);Negative Stunden (4H);Negative Stunden (3H);Negative Stunden (1H);Negative Stunden (15MIN)",
     },
@@ -192,7 +192,7 @@ endpoints = {
         "transformed_header": "Alle Werte in ct/kWh;JW;JW Wind an Land;JW Wind auf See;JW Solar",
     },
     "/redispatch": {
-        "first_data": dt.datetime(2021, 1, 1),
+        "first_data": dt.datetime(2020, 12, 31, 23),
         "header": "BEGINN_DATUM;BEGINN_UHRZEIT;ZEITZONE_VON;ENDE_DATUM;ENDE_UHRZEIT;ZEITZONE_BIS;GRUND_DER_MASSNAHME;RICHTUNG;MITTLERE_LEISTUNG_MW;MAXIMALE_LEISTUNG_MW;GESAMTE_ARBEIT_MWH;ANWEISENDER_UENB;ANFORDERNDER_UENB;BETROFFENE_ANLAGE;PRIMAERENERGIEART",
         "transformed_header": "BEGINN;ENDE;GRUND_DER_MASSNAHME;RICHTUNG;MITTLERE_LEISTUNG_MW;MAXIMALE_LEISTUNG_MW;GESAMTE_ARBEIT_MWH;ANWEISENDER_UENB;ANFORDERNDER_UENB;BETROFFENE_ANLAGE;PRIMAERENERGIEART",
     },
@@ -212,7 +212,7 @@ endpoints = {
         "transformed_header": "From;To;Value",
     },
     "/NrvSaldo/NRVSaldo/Betrieblich": {
-        "first_data": dt.datetime(2014, 3, 25, 23),
+        "first_data": dt.datetime(2014, 2, 25, 23),
         "header": "Datum;Zeitzone;von;bis;Datenkategorie;Datentyp;Einheit;Deutschland;AEP Knappheitskomponente;Mrl-Mol-Abweichung;Srl-Mol-Abweichung",
         "transformed_header": "von;bis;Datenkategorie;Datentyp;Einheit;Deutschland;AEP Knappheitskomponente;Mrl-Mol-Abweichung;Srl-Mol-Abweichung",
     },
@@ -242,17 +242,17 @@ endpoints = {
         "transformed_header": "von;bis;Datenkategorie;Datentyp;Einheit;50Hertz (Positiv);Amprion (Positiv);TenneT TSO (Positiv);TransnetBW (Positiv);Deutschland (Positiv);50Hertz (Negativ);Amprion (Negativ);TenneT TSO (Negativ);TransnetBW (Negativ);Deutschland (Negativ)",
     },
     "/NrvSaldo/AktivierteMRL/Betrieblich": {
-        "first_data": dt.datetime(2011, 6, 26, 22),
+        "first_data": dt.datetime(2011, 3, 31, 22),
         "header": "Datum;Zeitzone;von;bis;Datenkategorie;Datentyp;Einheit;50Hertz (Positiv);Amprion (Positiv);TenneT TSO (Positiv);TransnetBW (Positiv);Deutschland (Positiv);50Hertz (Negativ);Amprion (Negativ);TenneT TSO (Negativ);TransnetBW (Negativ);Deutschland (Negativ);MOL-Abweichung",
         "transformed_header": "von;bis;Datenkategorie;Datentyp;Einheit;50Hertz (Positiv);Amprion (Positiv);TenneT TSO (Positiv);TransnetBW (Positiv);Deutschland (Positiv);50Hertz (Negativ);Amprion (Negativ);TenneT TSO (Negativ);TransnetBW (Negativ);Deutschland (Negativ);MOL-Abweichung",
     },
     "/NrvSaldo/AktivierteMRL/Qualitaetsgesichert": {
-        "first_data": dt.datetime(2014, 4, 30, 22),
+        "first_data": dt.datetime(2013, 12, 31, 23),
         "header": "Datum;Zeitzone;von;bis;Datenkategorie;Datentyp;Einheit;50Hertz (Positiv);Amprion (Positiv);TenneT TSO (Positiv);TransnetBW (Positiv);Deutschland (Positiv);50Hertz (Negativ);Amprion (Negativ);TenneT TSO (Negativ);TransnetBW (Negativ);Deutschland (Negativ)",
         "transformed_header": "von;bis;Datenkategorie;Datentyp;Einheit;50Hertz (Positiv);Amprion (Positiv);TenneT TSO (Positiv);TransnetBW (Positiv);Deutschland (Positiv);50Hertz (Negativ);Amprion (Negativ);TenneT TSO (Negativ);TransnetBW (Negativ);Deutschland (Negativ)",
     },
     "/NrvSaldo/SRLOptimierung/Betrieblich": {
-        "first_data": dt.datetime(2022, 6, 23, 22),
+        "first_data": dt.datetime(2022, 6, 21, 22),
         "header": "Datum;Zeitzone;von;bis;Datenkategorie;Datentyp;Einheit;50Hertz (Positiv);Amprion (Positiv);TenneT TSO (Positiv);TransnetBW (Positiv);Deutschland (Positiv);50Hertz (Negativ);Amprion (Negativ);TenneT TSO (Negativ);TransnetBW (Negativ);Deutschland (Negativ)",
         "transformed_header": "von;bis;Datenkategorie;Datentyp;Einheit;50Hertz (Positiv);Amprion (Positiv);TenneT TSO (Positiv);TransnetBW (Positiv);Deutschland (Positiv);50Hertz (Negativ);Amprion (Negativ);TenneT TSO (Negativ);TransnetBW (Negativ);Deutschland (Negativ)",
     },
@@ -302,7 +302,7 @@ endpoints = {
         "transformed_header": "von;bis;Datenkategorie;Datentyp;Einheit;50Hertz (Positiv);Amprion (Positiv);TenneT TSO (Positiv);TransnetBW (Positiv);Deutschland (Positiv);50Hertz (Negativ);Amprion (Negativ);TenneT TSO (Negativ);TransnetBW (Negativ);Deutschland (Negativ)",
     },
     "/NrvSaldo/Nothilfe/Betrieblich": {
-        "first_data": dt.datetime(2025, 5, 31, 22),
+        "first_data": dt.datetime(2025, 5, 6, 6),
         "header": "Datum;Zeitzone;von;bis;Datenkategorie;Datentyp;Einheit;50Hertz (Positiv);Amprion (Positiv);TenneT TSO (Positiv);TransnetBW (Positiv);Deutschland (Positiv);50Hertz (Negativ);Amprion (Negativ);TenneT TSO (Negativ);TransnetBW (Negativ);Deutschland (Negativ)",
         "transformed_header": "von;bis;Datenkategorie;Datentyp;Einheit;50Hertz (Positiv);Amprion (Positiv);TenneT TSO (Positiv);TransnetBW (Positiv);Deutschland (Positiv);50Hertz (Negativ);Amprion (Negativ);TenneT TSO (Negativ);TransnetBW (Negativ);Deutschland (Negativ)",
     },
