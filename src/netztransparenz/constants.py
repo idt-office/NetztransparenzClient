@@ -26,18 +26,33 @@ endpoints = {
         "header": "Datum;von;Zeitzone von;bis;Zeitzone bis;50Hertz (MW);Amprion (MW);TenneT TSO (MW);TransnetBW (MW)",
         "transformed_header": "von;bis;50Hertz (MW);Amprion (MW);TenneT TSO (MW);TransnetBW (MW)",
     },
-    "/onlineHochrechnung/Solar": {
+    "/onlinehochrechnung/Solar/betrieblich": {
+        "first_data": dt.datetime(2026, 8, 31, 22),
+        "header": "Datum;von;Zeitzone von;bis;Zeitzone bis;50Hertz (MW);Amprion (MW);TenneT TSO (MW);TransnetBW (MW)",
+        "transformed_header": "von;bis;50Hertz (MW);Amprion (MW);TenneT TSO (MW);TransnetBW (MW)",
+    },
+    "/onlinehochrechnung/Solar/qualitaetsgesichert": {
         "first_data": dt.datetime(2011, 12, 31, 23),
         "header": "Datum;von;Zeitzone von;bis;Zeitzone bis;50Hertz (MW);Amprion (MW);TenneT TSO (MW);TransnetBW (MW)",
         "transformed_header": "von;bis;50Hertz (MW);Amprion (MW);TenneT TSO (MW);TransnetBW (MW)",
     },
-    "/onlineHochrechnung/Windonshore": {
+    "/onlinehochrechnung/Windonshore/betrieblich": {
+        "first_data": dt.datetime(2026, 8, 31, 22),
+        "header": "Datum;von;Zeitzone von;bis;Zeitzone bis;50Hertz (MW);Amprion (MW);TenneT TSO (MW);TransnetBW (MW)",
+        "transformed_header": "von;bis;50Hertz (MW);Amprion (MW);TenneT TSO (MW);TransnetBW (MW)",
+    },
+    "/onlinehochrechnung/Windonshore/qualitaetsgesichert": {
         "first_data": dt.datetime(2011, 12, 31, 23),
         "header": "Datum;von;Zeitzone von;bis;Zeitzone bis;50Hertz (MW);Amprion (MW);TenneT TSO (MW);TransnetBW (MW)",
         "transformed_header": "von;bis;50Hertz (MW);Amprion (MW);TenneT TSO (MW);TransnetBW (MW)",
     },
-    "/onlineHochrechnung/Windoffshore": {
-        "first_data": dt.datetime(2011, 12, 31, 23),
+    "/onlinehochrechnung/Windoffshore/betrieblich": {
+        "first_data": dt.datetime(2026, 8, 31, 22),
+        "header": "Datum;von;Zeitzone von;bis;Zeitzone bis;50Hertz (MW);Amprion (MW);TenneT TSO (MW);TransnetBW (MW)",
+        "transformed_header": "von;bis;50Hertz (MW);Amprion (MW);TenneT TSO (MW);TransnetBW (MW)",
+    },
+    "/onlinehochrechnung/Windoffshore/qualitaetsgesichert": {
+        "first_data": dt.datetime(2012, 12, 13, 23),
         "header": "Datum;von;Zeitzone von;bis;Zeitzone bis;50Hertz (MW);Amprion (MW);TenneT TSO (MW);TransnetBW (MW)",
         "transformed_header": "von;bis;50Hertz (MW);Amprion (MW);TenneT TSO (MW);TransnetBW (MW)",
     },
