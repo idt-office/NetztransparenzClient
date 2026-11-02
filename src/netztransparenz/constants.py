@@ -42,17 +42,17 @@ endpoints = {
         "transformed_header": "von;bis;50Hertz (MW);Amprion (MW);TenneT TSO (MW);TransnetBW (MW)",
     },
     "/NegativePreise": {
-        "first_data": dt.datetime(2020, 12, 31, 23),
-        "header": "Datum;Stunde1;Stunde3;Stunde4;Stunde6",
-        "transformed_header": "Datum;Stunde1;Stunde3;Stunde4;Stunde6",
+        "first_data": dt.datetime(2015, 12, 31, 23),
+        "header": "Datum;Stunde1;Stunde2;Stunde3;Stunde4;Stunde6",
+        "transformed_header": "Datum;Stunde1;Stunde2;Stunde3;Stunde4;Stunde6",
     },
     "/NegativePreise/1": {
-        "first_data": dt.datetime(2020, 12, 31, 23),
+        "first_data": dt.datetime(2020, 8, 31, 22),
         "header": "Datum;Negativ",
         "transformed_header": "Datum;Negativ",
     },
     "/NegativePreise/3": {
-        "first_data": dt.datetime(2020, 12, 31, 23),
+        "first_data": dt.datetime(2023, 12, 31, 23),
         "header": "Datum;Negativ",
         "transformed_header": "Datum;Negativ",
     },
@@ -62,12 +62,12 @@ endpoints = {
         "transformed_header": "Datum;Negativ",
     },
     "/NegativePreise/6": {
-        "first_data": dt.datetime(2020, 12, 31, 23),
+        "first_data": dt.datetime(2015, 12, 31, 23),
         "header": "Datum;Negativ",
         "transformed_header": "Datum;Negativ",
     },
     "/NegativePreise/15": {
-        "first_data": dt.datetime(2020, 12, 31, 23),
+        "first_data": dt.datetime(2025, 9, 30, 22),
         "header": "Datum;Negativ",
         "transformed_header": "Datum;Negativ",
     },
@@ -132,17 +132,17 @@ endpoints = {
         "transformed_header": "BEGINN;ENDE;GRUND_DER_MASSNAHME;RICHTUNG;MITTLERE_LEISTUNG_MW;MAXIMALE_LEISTUNG_MW;GESAMTE_ARBEIT_MWH;ANWEISENDER_UENB;ANFORDERNDER_UENB;BETROFFENE_ANLAGE;PRIMAERENERGIEART",
     },
     "/Kapazitaetsreserve": {
-        "first_data": dt.datetime(2021, 1, 1),
+        "first_data": dt.datetime(2017, 6, 2, 4),
         "header": "BEGINN_DATUM;BEGINN_UHRZEIT;ZEITZONE_VON;ENDE_DATUM;ENDE_UHRZEIT;ZEITZONE_BIS;GRUND_DER_MASSNAHME;RICHTUNG;MITTLERE_LEISTUNG_MW;MAXIMALE_LEISTUNG_MW;GESAMTE_ARBEIT_MWH;ANWEISENDER_UENB;ANFORDERNDER_UENB;BETROFFENE_ANLAGE;PRIMAERENERGIEART",
         "transformed_header": "BEGINN;ENDE;GRUND_DER_MASSNAHME;RICHTUNG;MITTLERE_LEISTUNG_MW;MAXIMALE_LEISTUNG_MW;GESAMTE_ARBEIT_MWH;ANWEISENDER_UENB;ANFORDERNDER_UENB;BETROFFENE_ANLAGE;PRIMAERENERGIEART",
     },
     "/VorhaltungkRD": {
-        "first_data": dt.datetime(2025, 1, 1),
+        "first_data": dt.datetime(2025, 9, 30, 22),
         "header": "BEGINN_DATUM;BEGINN_UHRZEIT;ZEITZONE_VON;ENDE_DATUM;ENDE_UHRZEIT;ZEITZONE_BIS;GRUND_DER_MASSNAHME;RICHTUNG;MITTLERE_LEISTUNG_MW;MAXIMALE_LEISTUNG_MW;GESAMTE_ARBEIT_MWH;ANWEISENDER_UENB;ANFORDERNDER_UENB;BETROFFENE_ANLAGE;PRIMAERENERGIEART",
         "transformed_header": "BEGINN;ENDE;GRUND_DER_MASSNAHME;RICHTUNG;MITTLERE_LEISTUNG_MW;MAXIMALE_LEISTUNG_MW;GESAMTE_ARBEIT_MWH;ANWEISENDER_UENB;ANFORDERNDER_UENB;BETROFFENE_ANLAGE;PRIMAERENERGIEART",
     },
     "/TrafficLight": {
-        "first_data": dt.datetime(2021, 9, 21, 22),
+        "first_data": dt.datetime(2021, 9, 22, 22),
         "header": "From;To;Value",
         "transformed_header": "From;To;Value",
     },

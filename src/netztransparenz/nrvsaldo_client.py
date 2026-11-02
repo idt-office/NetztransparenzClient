@@ -93,7 +93,7 @@ class NrvSaldoClient(BaseNtClient):
         """
         Return a pandas Dataframe with data of the endpoint /TrafficLight.
 
-            dt_begin -- datetime object for start of data in UTC (no values before: 2021-09-21T22:00:00)
+            dt_begin -- datetime object for start of data in UTC (no values before: 2021-09-22T22:00:00)
             dt_end -- datetime object for end of data in UTC
         """
         if not self._check_preconditions(
