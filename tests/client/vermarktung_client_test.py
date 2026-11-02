@@ -209,16 +209,25 @@ def test_negative_preise_6h(client, requests_mock):
 
 def test_negative_preise_15m(client, requests_mock):
     body = """Datum;Negativ
-2024-01-01 00:00;Ja
-2024-01-01 00:15;Nein"""
+2025-10-01 00:00;Ja
+2025-10-01 00:15;Nein"""
 
     requests_mock.get(
-        f"{_API_BASE_URL}/data/NegativePreise/15/2024-01-01T00:00:00/2024-02-01T00:00:00",
+        f"{_API_BASE_URL}/data/NegativePreise/15/2025-10-01T00:00:00/2025-11-01T00:00:00",
         text=body,
     )
-    result = client.negative_preise_15m(START, END, True)
+    result = client.negative_preise_15m(
+        dt.datetime(2025, 10, 1, tzinfo=dt.UTC), dt.datetime(2025, 11, 1), True
+    )
     assert result["Negativ"].iloc[0] == "Ja"
-    assert result["Datum"].iloc[0] == pd.Timestamp(2024, 1, 1, 0, 0)
+    assert result["Datum"].iloc[0] == pd.Timestamp(2025, 10, 1, 0, 0)
+
+
+def test_negative_preise_before_first_data(client):
+    client.set_strict(False)
+    result = client.negative_preise_15m(START, END, True)
+    assert result.empty
+    assert list(result.columns) == ["Datum", "Negativ"]
 
 
 def test_jahresmarktpraemie(client, requests_mock):
