@@ -343,3 +343,20 @@ def test_anspruch_verguetung_kwkg_splits_long_ranges(client, requests_mock):
 def test_anspruch_verguetung_unknown_logic(client):
     with pytest.raises(ValueError):
         client.anspruch_verguetung_kwkg(START, END, logic="2hour")
+
+
+def test_spotmarktpreise_splits_long_ranges(client, requests_mock):
+    client.set_max_query_distance(dt.timedelta(days=1))
+    for day in (1, 2):
+        requests_mock.get(
+            f"{_API_BASE_URL}/data/Spotmarktpreise/2024-01-0{day}T00:00:00/2024-01-0{day + 1}T00:00:00",
+            text=f"""Datum;von;Zeitzone von;bis;Zeitzone bis;Spotmarktpreis in ct/kWh
+0{day}.01.2024;00:00;UTC;01:00;UTC;7,7""",
+        )
+    result = client.spotmarktpreise(
+        dt.datetime(2024, 1, 1, tzinfo=dt.UTC), dt.datetime(2024, 1, 3), True
+    )
+    assert list(result.index) == [
+        pd.Timestamp(2024, 1, 1, tz="UTC"),
+        pd.Timestamp(2024, 1, 2, tz="UTC"),
+    ]
