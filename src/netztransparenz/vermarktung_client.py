@@ -52,7 +52,11 @@ class VermarktungClient(BaseNtClient):
                 for timeframe in timeframes:
                     dataframes.append(
                         self._basic_read_vermarktung(
-                            resource_url, timeframe[0], timeframe[1], transform_dates
+                            resource_url,
+                            timeframe[0],
+                            timeframe[1],
+                            transform_dates,
+                            dateformat,
                         )
                     )
                 return pd.concat(dataframes)
