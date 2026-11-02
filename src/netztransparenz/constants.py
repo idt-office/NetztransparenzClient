@@ -66,6 +66,11 @@ endpoints = {
         "header": "Datum;Negativ",
         "transformed_header": "Datum;Negativ",
     },
+    "/NegativePreise/2": {
+        "first_data": dt.datetime(2025, 12, 31, 23),
+        "header": "Datum;Negativ",
+        "transformed_header": "Datum;Negativ",
+    },
     "/NegativePreise/3": {
         "first_data": dt.datetime(2023, 12, 31, 23),
         "header": "Datum;Negativ",
@@ -85,6 +90,51 @@ endpoints = {
         "first_data": dt.datetime(2025, 9, 30, 22),
         "header": "Datum;Negativ",
         "transformed_header": "Datum;Negativ",
+    },
+    "/anspruchverguetungeeg/1hour": {
+        "first_data": dt.datetime(2020, 8, 31, 22),
+        "header": "Datum;Zeitzone;von;bis;AnspruchVerguetung",
+        "transformed_header": "von;bis;AnspruchVerguetung",
+    },
+    "/anspruchverguetungeeg/2hour": {
+        "first_data": dt.datetime(2025, 12, 31, 23),
+        "header": "Datum;Zeitzone;von;bis;AnspruchVerguetung",
+        "transformed_header": "von;bis;AnspruchVerguetung",
+    },
+    "/anspruchverguetungeeg/3hour": {
+        "first_data": dt.datetime(2023, 12, 31, 23),
+        "header": "Datum;Zeitzone;von;bis;AnspruchVerguetung",
+        "transformed_header": "von;bis;AnspruchVerguetung",
+    },
+    "/anspruchverguetungeeg/4hour": {
+        "first_data": dt.datetime(2020, 12, 31, 23),
+        "header": "Datum;Zeitzone;von;bis;AnspruchVerguetung",
+        "transformed_header": "von;bis;AnspruchVerguetung",
+    },
+    "/anspruchverguetungeeg/6hour": {
+        "first_data": dt.datetime(2015, 12, 31, 23),
+        "header": "Datum;Zeitzone;von;bis;AnspruchVerguetung",
+        "transformed_header": "von;bis;AnspruchVerguetung",
+    },
+    "/anspruchverguetungeeg/15minutes": {
+        "first_data": dt.datetime(2025, 9, 30, 22),
+        "header": "Datum;Zeitzone;von;bis;AnspruchVerguetung",
+        "transformed_header": "von;bis;AnspruchVerguetung",
+    },
+    "/anspruchverguetungeeg/2cent": {
+        "first_data": dt.datetime(2025, 9, 30, 22),
+        "header": "Datum;Zeitzone;von;bis;AnspruchVerguetung",
+        "transformed_header": "von;bis;AnspruchVerguetung",
+    },
+    "/anspruchverguetungkwkg/1hour": {
+        "first_data": dt.datetime(2015, 12, 31, 23),
+        "header": "Datum;Zeitzone;von;bis;AnspruchVerguetung",
+        "transformed_header": "von;bis;AnspruchVerguetung",
+    },
+    "/anspruchverguetungkwkg/15minutes": {
+        "first_data": dt.datetime(2025, 9, 30, 22),
+        "header": "Datum;Zeitzone;von;bis;AnspruchVerguetung",
+        "transformed_header": "von;bis;AnspruchVerguetung",
     },
     "/vermarktung/InanspruchnahmeAusgleichsenergie": {
         "first_data": dt.datetime(2011, 3, 31, 22),
@@ -305,6 +355,16 @@ endpoints = {
         "first_data": dt.datetime(2023, 12, 31, 23),
         "header": "Datum;Zeitzone;von;bis;Datenkategorie;Datentyp;Netzengpass;Technische Störung Abrufsystem;Technische Störung Anbieter;Test Aktivierung",
         "transformed_header": "von;bis;Datenkategorie;Datentyp;Netzengpass;Technische Störung Abrufsystem;Technische Störung Anbieter;Test Aktivierung",
+    },
+    "/NrvSaldo/mFRRSatisfiedDemand/Betrieblich": {
+        "first_data": dt.datetime(2026, 1, 13, 23),
+        "header": "Datum;Zeitzone;von;bis;Datenkategorie;Datentyp;Einheit;Deutschland (Positiv);Deutschland (Negativ)",
+        "transformed_header": "von;bis;Datenkategorie;Datentyp;Einheit;Deutschland (Positiv);Deutschland (Negativ)",
+    },
+    "/NrvSaldo/nrvSaldoMinute/Betrieblich": {
+        "first_data": dt.datetime(2026, 1, 27, 23),
+        "header": "Datum;Zeitzone;von;bis;Datenkategorie;Datentyp;Einheit;Deutschland;Status",
+        "transformed_header": "von;bis;Datenkategorie;Datentyp;Einheit;Deutschland;Status",
     },
     "/AusgewieseneABSM": {
         "first_data": dt.datetime(2024, 9, 30, 22),
